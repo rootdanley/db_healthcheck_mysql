@@ -1,0 +1,26 @@
+# instances/<inst>/run.yaml
+instance: crmbonus
+engine: mysql_community   # exemplos: mysql_community | aurora_provisioned | aurora_serverless_v2 | aurora_mysql
+week: 2026-02-15
+
+shared:
+  support_major: /opt/db_health/shared/support/support_calendar_major_mysql_rds.csv
+  support_minor: /opt/db_health/shared/support/support_calendar_minor_mysql_rds.csv
+
+# Opcional: só use se você quiser apontar caminhos fora do padrão do repo.
+# Se não declarar, os scripts assumem:
+# layer0/inputs/<week>/layer0_inventory.csv
+# layerA/inputs/<week>/*.csv
+# layerB/inputs/<week>/*.tsv
+# layerC/inputs/<week>/*.csv
+layer0:
+  inventory_csv: ""   # deixe vazio pra usar o padrão
+
+layerA:
+  dir: ""             # deixe vazio pra usar layerA/inputs/<week>
+
+layerB:
+  dir: ""             # deixe vazio pra usar layerB/inputs/<week>
+
+layerC:
+  dir: ""             # deixe vazio pra usar layerC/inputs/<week>

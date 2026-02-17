@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Logs
+logs/
+*.log
+
+# Temporary
+tmp/
+
+# Instances generated data
+instances/*/layer0/inputs/
+instances/*/layer0/collected/
+instances/*/layerA/inputs/
+instances/*/layerA/collected/
+instances/*/layerB/inputs/
+instances/*/layerB/collected/
+instances/*/layerC/inputs/
+instances/*/layerC/collected/
+instances/*/reports/
+instances/*/logs/
+instances/*/tmp/
+
+# Generated files
+*.csv
+*.tsv
+*.html
+*.png
+

@@ -1,0 +1,20 @@
+instance: crmbonus
+week: 2026-02-15
+engine: mysql_community
+
+shared:
+  support_major: /opt/db_health/shared/support/support_calendar_major_mysql_rds.csv
+  support_minor: /opt/db_health/shared/support/support_calendar_minor_mysql_rds.csv
+
+layer0:
+  inventory_csv: /opt/db_health/instances/crmbonus/layer0/inputs/2026-02-15/layer0_inventory.csv
+
+layerA:
+  cloudwatch_wide: /opt/db_health/instances/crmbonus/layerA/collected/2026-02-15/cloudwatch_wide.csv
+  cloudwatch_long: /opt/db_health/instances/crmbonus/layerA/collected/2026-02-15/cloudwatch_long.csv
+
+layerB:
+  dir: /opt/db_health/instances/crmbonus/layerB/collected/2026-02-15
+
+layerC:
+  dir: /opt/db_health/instances/crmbonus/layerC/inputs/2026-02-15
